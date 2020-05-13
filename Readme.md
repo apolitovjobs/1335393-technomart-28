@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Andrey Politov](https://up.htmlacademy.ru/htmlcss/28/user/1335393).
-* Наставник: [Дарья Воздраганова].(https://htmlacademy.ru/profile/id1227143)
+* Наставник: [Дарья Воздраганова - замечательный наставник](https://htmlacademy.ru/profile/id1227143)
 
 ---
 
