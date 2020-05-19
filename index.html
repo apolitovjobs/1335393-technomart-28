@@ -4,46 +4,37 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
- <body>
-  <header>
-	<section class="top">
-	<a><img src="img/logo.png" width="100" height="200" alt="Логотип">Техномарт</a>    <!--Кнопка слева сверху я так понял - это логотип-->
-	  <span>Поиск</span>                                      <!--Непонятно во что "Поиск" обернуть-->
-	   <div>
-	     <a href="#">Закладки</a>          
-	     <a href="#">Корзина</a>
-	     <a href="#">Оформить заказ</a>
-       </div>	
-    </section> 
-	<section class="top-nav">               <!--Насколько я понял Section это более глобальная блочная часть сайта, а div -менее глобальная и по сути грамотнее ее рассматривать как составляющее section, как небольшие блоки (разделы) в рамках секции-->
-	   <div>
-	     <p><i>Интернет-магазин <br>
+ <body> <!--Не понимаю почему подсвечивается - якобы ошибка по синтаксису-->
+  <header> <!--Переосмыслил наличие section в header, посмотрел Барбершоп - и убрал вообще section из header-->
+	<a href="index.html"><img src="img/logo.png" width="100" height="200" alt="Логотип">Техномарт</a>   
+	  <span>Поиск_</span>                                      
+	     <a href="">Закладки</a>          
+	     <a href="">Корзина</a>
+	     <a href="">Оформить заказ</a>
+         <h1>Интернет-магазин <br>
 	      строительных материалов <br>
-	      и инструментов для ремонта</i></p>
-      </div>
-      <div>
-     	<p class="Naverno bydet kakoi-to klass">+7 (812) 555-05-55</p>           
-     	<p class="Razmer text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> <!--Классы потом переименую пока есть предположение, что они нужны-->
-      </div>
+	      и инструментов для ремонта</h1>     
+     	<a href="tel:+78125550555">+7 (812) 555-05-55</a> <!--Это как? через сайт ?)-->       
+     	<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>    
      <div>
-     	 <a href="#">Войти</a>          
-	     <a href="#">Регистрация</a>
+     	 <a href="">Войти</a>          
+	     <a href="">Регистрация</a>
      </div>      
        <nav>
 		 <ul>
-			<il><a href="index.html">Главная</a></il>
-			<il><a href="catalog.html">Компания</a></il>
+			<il><a href="">Главная</a></il>
+			<il><a href="">Компания</a></il>
 			<il><a href="catalog.html">Каталог</a></il>
-			<il><a href="catalog.html">Новости</a></il>
-			<il><a href="catalog.html">Спецпредложения</a></il>
-			<il><a href="catalog.html">Доставка</a></il>
-			<il><a href="catalog.html">Контакты</a></il>
+			<il><a href="l">Новости</a></il>
+			<il><a href="">Спецпредложения</a></il>
+			<il><a href="">Доставка</a></il>
+			<il><a href="">Контакты</a></il>
 		 </ul>
 	   </nav>
 </header>
 
 <main>
-	<section class="Uslugi">
+	<section> <!--Осознал отсустивие необходимости писать в section класс, для этого есть теги h1,h2..с именем-->
 	  	<h2>Список услуг</h2>
 	  	<ul>
 	  		<li><h3>Материалы</h3>
@@ -56,96 +47,84 @@
 	  			<p><a href="">На 350 товаров</a></p></li>
 	  		<li><h3>Доставка</h3>
 	  			<p><a href="">Бесплатно</a></p></li>
-	  		<li><h3>ПЕРФОРАТОРЫ</h3>
+	  		<li><h3>Перфораторы</h3>
 	  			<p>Настоящие мужские игрушки</p>
-	  			<p><a  class="Button red" href="">Открыть каталог</a></p></li>
+	  		<p><a href="">Открыть каталог</a></p></li>  
 	  	</ul>
-	<section class="Products">
+	  </section> <!--Осознал отсуствие необходимости в секшене писать класс, как бы именовать его, для этого есть h2-->
+	<section>
 		<h2>Товары</h2>
 	</section>
 
-	<section class="Vendors"> 
+	<section> 
 	<h2>Производители</h2>		
 	</section>
 
-	<section class="Service">
+	<section>
 	<h2>Сервисы</h2>	 		
 	</section>
 	
-	<section class="Company">
-	  <div>
-		<h2>Компания "Техномарт"</h2>
-		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+	<section>
+	  <h2>Компания "Техномарт"</h2>
+		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>  <!--Нашел ошибку - не было br-->
+		 ремонта и строительства не оставит равнодушными любителей сэкономить на<br>    <!--Нашел ошибку - не было br-->
+		 гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:</p>
         <ul>
         	<li><strong>Деловые линии</strong></li>
         	<li><strong>Автотрейдинг</strong></li>
-        	<li><strong>ЖелДорЭкспедиция</strong>
-        	<p><a class="Button red" href="blank.html">Подробнее о компании</a></p></li>
+        	<li><strong>ЖелДорЭкспедиция</strong></li>
+        	<a class="Button red" href="blank.html">Подробнее о компании</a>
         </ul>
-      </div>
       <div>
          <h2>Контакты</h2>
          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-         <a href="#"><img src="picture.jpg" width="180" height="49" alt="Карта"></a>  <!--Вероятно ссылка форму с картой-->
-         <p><a class="Button red" href="blank.html">Заблудились? Напишите нам!</a></p>
-       <button type="button">Закрыть</button> <!--Будущая кнопка закрытия карты-->
+         <a href="#"><img src="picture.jpg" width="180" height="49" alt="Карта"></a>  
+         <a class="Button red" href="blank.html">Заблудились? Напишите нам!</a>
       </div>
 	</section>
 </main>
- 
-<footer>
+ <footer> <!--Те div, которые ты сказала удалить -удалил, остальные поменял на section по аналогии с барбершопом-->
 	<section >
 	<h2>Как нас найти</h2>
-	<a><img src="img/logo.png" alt="Логотип">Техномарт</a>
+	<a href="index.html"><img src="img/logo.png" alt="Логотип">Техномарт</a>
 	<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  <br>
-	+7 (812) 555-05-55</p>
-	<div>
+	+7 (812) 555-05-55</p>	
 	<ul>
-		<li><a href="#">Компания</a></li>
-		<li><a href="#">Новости</a></li>
-		<li><a href="#">Каталог</a></li>
-		<li><a href="#">Доставка</a></li>
-		<li><a href="#">Контакты</a></li>
+		<li><a href="">Компания</a></li>
+		<li><a href="">Новости</a></li>
+		<li><a href="catalog.html">Каталог</a></li>
+		<li><a href="">Доставка</a></li>
+		<li><a href="">Контакты</a></li>
+	</ul>  
+   	<ul>
+		<li><a href="">Материалы</a></li>
+		<li><a href="">Техника</a></li>
+		<li><a href="">Инструмент</a></li>
+		<li><a href="">Спецпредложения</a></li>
 	</ul>
-    </div>
-   <div>
-	<ul>
-		<li><a href="#">Материалы</a></li>
-		<li><a href="#">Техника</a></li>
-		<li><a href="#">Инструмент</a></li>
-		<li><a href="#">Спецпредложения</a></li>
-	</ul>
-    </div>
-	</section>
-	<div>
+    </section>
+	<section>
 		<p>© 2010–2019 Компания «Техномарт» <br>
 		 Все права защищены</p>
-	</div>
-
-	<div>
-		<h2>Давайте дружить!</h2>
+	</section>
+	<section>
+		<h2>Мы в социальных сетях!</h2> <!--Старое название свистнул с барбершопа)-->
 	<ul>
-		<li><a href="#">В контакте</a></li>
-		<li><a href="#">Фейсбук</a></li>
-		<li><a href="#">Инстаграм</a></li>
+		<li><a href="">В контакте</a></li>
+		<li><a href="">Фейсбук</a></li>
+		<li><a href="">Инстаграм</a></li>
 	</ul>
-	</div>
-
-    <div>
-	<p>Обратная связь
+	</section>
+   	<p>Обратная связь
     <a href="#">mail@htmlacademy.ru</a>
 	</p>
-   </div>
-
-   <div>
+    
 	<p>Разработано
-    <a href="#">htmlacademy.ru</a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 	</p>
-  </div>
-	
-    </section>
- </footer>
+   </footer>
+ <button type="button">Закрыть</button>  <!--для модального окна-->
 </body>
 </html>
