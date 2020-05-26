@@ -11,7 +11,10 @@
     <section>
       <a href="index.html">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт"></a>
-      <span>Поиск</span>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <label for="search">Поиск</label>
+        <input type="search" id="search" name="search" placeholder="Поиск">
+      </form>
       <a href="">Закладки</a>
       <a href="">Корзина</a>
       <a href="">Оформить заказ</a>
@@ -50,9 +53,17 @@
       </div>
       <aside>
         <h2>Фильтр товаров</h2>
-        <fieldset>
-          <legend>Производители:</legend>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="amount_max.value=range.value">
+          <fieldset>
+            <legend>Цена:</legend>
+            <input type="range" min="0" max="50000" name="range">
+            <div class="amoumt-output">
+              <output name="amount_min">0</output>
+              <output name="amount_max">30000</output>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
             <ul>
               <li>
                 <input type="checkbox" id="Bosch" name="Bosch" checked>
@@ -75,21 +86,21 @@
                 <label for="Hitachi">Hitachi</label>
               </li>
             </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li>
-              <input type="radio" id="akk" name="filter-on" value="Rechargeable" checked>
-              <label for="akk">Аккумуляторные</label>
-            </li>
-            <li>
-              <input type="radio" id="net" name="filter-on" value="networking">
-              <label for="net">Сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="akk" name="filter-on" value="Rechargeable" checked>
+                <label for="akk">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" id="net" name="filter-on" value="networking">
+                <label for="net">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
       </aside>
     </section>
