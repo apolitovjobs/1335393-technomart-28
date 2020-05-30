@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Мой проект: Техномарт</title>
 </head>
 
 <body>
   <header>
-    <section>
+    <section class="top-header">
       <a href="index.html">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт"></a>
       <form action="https://echo.htmlacademy.ru/" method="post">
@@ -43,7 +44,7 @@
   </header>
   <main>
     <section class="promo">
-      <h2>Список услуг</h2>
+      <h2 class="visually-hidden">Перечень всех услуг</h2>
       <div>
         <article>
           <h3>Материалы</h3>
@@ -242,7 +243,7 @@
       </div>
     </section>
     <section>
-      <h2>Обратная связь</h2>
+      <h2 class="visually-hidden">Обратная связь</h2>
       <p>© 2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
       <ul>
@@ -260,7 +261,33 @@
       </div>
     </section>
   </footer>
-  <button type="button">Закрыть</button>
+  <section>
+    <h2 class="visually-hidden">Связь с нами</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="name" id="email" placeholder="email@exaple.com" required>
+      </p>
+      <p>
+        <label for="comment">Текст письма:</label></p>
+      <textarea name="comment" id="comment" cols="30" rows="10">В свободной форме</textarea>
+      <div>
+        <button type="submit">Отправить</button>
+      </div>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+  <section>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <img src="img/big-map.png" width="943" height="449" alt="">
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

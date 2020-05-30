@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Мой проект: Техномарт</title>
 </head>
 
@@ -52,8 +53,8 @@
         <a href="">Перфораторы</a>
       </div>
       <aside>
-        <h2>Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="amount_max.value=range.value">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="get" oninput="amount_max.value=range.value">
           <fieldset>
             <legend>Цена:</legend>
             <input type="range" min="0" max="50000" name="range">
@@ -265,7 +266,7 @@
       </div>
     </section>
     <section>
-      <h2>Обратная связь</h2>
+      <h2 class="visually-hidden">Обратная связь</h2>
       <p>© 2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
       <ul>
@@ -283,6 +284,17 @@
       </div>
     </section>
   </footer>
+  <section>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Добавление товара в корзину</h2>
+      <p>Товар добавлен в корзину!</p>
+      <div>
+        <a href="">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+      </div>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
