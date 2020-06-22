@@ -16,14 +16,16 @@
       <div class="content inner-menutop-header">
         <a aria-label="Логотип сайта Техномарт">
           <img class="logo-header" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт"></a>
-        <form class="menutop-search-input" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="menutop-search" action="https://echo.htmlacademy.ru/" method="post">
           <span class="visually-hidden">Поиск</span>
-          <label class="menutop-search" for="search"></label>
-          <input type="search" id="search" name="search" placeholder="Поиск">
+          <label class="search" for="search"></label>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" fill="rgba(255,255,255,0.5)" /></svg>
+          <input class="rr" type="search" id="search" name="search" placeholder="Поиск:">
         </form>
         <div class="labels">
-          <a class="menutop-bookmarks" href="">Закладки</a>
-          <a class="menutop-backet" href="">Корзина</a>
+          <a class="menutop-bookmarks" href="">Закладки: 0</a>
+          <a class="menutop-backet" href="">Корзина: 0</a>
           <a class="menutop-order" href="">Оформить заказ</a>
         </div>
       </div>
@@ -34,7 +36,7 @@
         <address><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
-        <div>
+        <div class="enter">
           <a class="login" href="">Войти</a>
           <a class="registration" href="">Регистрация</a>
         </div>
@@ -118,8 +120,8 @@
               <img src="img/snippet-9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
             </div>
             <h3 class="catalog-items">Перфоратор BOSH<br> BFG 9000</h3>
-            <p><del class="del">32500</del></p>
-            <p class="price">25500</p>
+            <p><del class="del">32500 р.</del></p>
+            <p class="price">25500 р.</p>
             <div>
               <a class="button-buy" href="">Купить</a>
               <button class="button-items" type="button">В закладки</button>
@@ -131,8 +133,8 @@
               <img src="img/snippet-3000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 3000">
             </div>
             <h3 class="catalog-items">Перфоратор BOSH<br> BFG 3000</h3>
-            <p><del class="del">22500</del></p>
-            <p class="price">15500</p>
+            <p><del class="del">22500 р.</del></p>
+            <p class="price">15500 р.</p>
             <div>
               <a class="button-buy" href="">Купить</a>
               <button class="button-items" type="button">В закладки</button>
@@ -144,8 +146,8 @@
               <img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
             </div>
             <h3 class="catalog-items">Перфоратор BOSH<br> BFG 6000</h3>
-            <p><del class="del">30500</del></p>
-            <p class="price">25500</p>
+            <p><del class="del">30500 р.</del></p>
+            <p class="price">25500 р.</p>
             <div>
               <a class="button-buy" href="">Купить</a>
               <button class="button-items" type="button">В закладки</button>
@@ -155,7 +157,7 @@
             <span>New</span>
             <p><img src="img/snippet-2000.jpg" width="" height="" alt="Перфоратор BOSH BFG 2000"></p>
             <h3 class="catalog-items">Перфоратор BOSH<br> BFG 2000</h3>
-            <p class="price">12500</p>
+            <p class="price">12500 р.</p>
             <div>
               <a class="button-buy" href="">Купить</a>
               <button class="button-items" type="button">В закладки</button>
@@ -239,10 +241,10 @@
     <section class="about-us">
       <div class="content content-about-us">
         <div class="about-us-flex">
-          <h2 class="titles h2-1">Компания "Техномарт"</h2>
-          <p class="text-about-us">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+          <h2>Компания "Техномарт"</h2>
+          <p class="text-about-us1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
             ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
-          <p class="text-about-us">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="text-about-us2">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:</p>
           <ul>
             <li class="list-about-us"><strong>Деловые линии</strong></li>
@@ -252,7 +254,7 @@
           <a class="button-red-about" href="">Подробнее о компании</a>
         </div>
         <div class="about-us-flex">
-          <h2 class="titles h2-2">Контакты</h2>
+          <h2>Контакты</h2>
           <p class="text-about-us">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <p><a href="" aria-label="Карта"><img src="img/index_map1.jpg" width="300" height="158" alt="Карта"></a></p>
           <a class="button-red-kontakt" href="">Заблудились? Напишите нам!</a>
@@ -294,15 +296,15 @@
         <p class="bottom-footer-company">© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <ul class="social">
-          <li><a class="social_icon" href="" aria-label="В контакте"><img src="img/social_vk.svg" width="25.05px" height="14.06" alt="vkontate"></a></li>
-          <li><a class="social_icon" href="" aria-label="facebook"><img src="img/social_facebook.svg" width="12" height="22" alt="facebook"></a></li>
-          <li><a class="social_icon" href="" aria-label="instagram"><img src="img/social_instagram.svg" width="21" height="21" alt="instagram"></a></li>
+          <li><a class="vk" href="" aria-label="В контакте"></a></li>
+          <li><a class="facebook" href="" aria-label="facebook"></a></li>
+          <li><a class="instagram" href="" aria-label="instagram"></a></li>
         </ul>
         <div class="bottom-footer-us">
           <p class="bottom-footer-company">Обратная связь<br>
             <a class="academy" href="">mail@htmlacademy.ru</a>
           </p>
-          <p class="bottom-footer-company">Разработано<br>
+          <p class="bottom-footer-company2">Разработано<br>
             <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
