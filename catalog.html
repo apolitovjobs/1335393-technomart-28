@@ -15,8 +15,8 @@
   <header class="header-block">
     <section class="menutop-header">
       <div class="content inner-menutop-header">
-        <a aria-label="Логотип сайта Техномарт">
-          <img class="logo-header" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт"></a>
+        <a class="logo-catalog" href="index.html" aria-label="Логотип сайта Техномарт">
+          <img class="logo-header" src="img/logo-technomart.svg" width="228" height="42" alt="Логотип магазина Техномарт"></a>
         <form class="menutop-search" action="https://echo.htmlacademy.ru/" method="post">
           <span class="visually-hidden">Поиск</span>
           <label class="search" for="search"></label>
@@ -26,7 +26,7 @@
         </form>
         <div class="labels">
           <a class="menutop-bookmarks" href="#">Закладки: 0</a>
-          <a class="menutop-backet" href="#">Корзина: 0</a>
+          <a class="menutop-backet active-red" href="#">Корзина: 10</a>
           <a class="menutop-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -99,38 +99,43 @@
           </fieldset>
           <fieldset class="filter-item vendors">
             <legend>Производители:</legend>
-            <ul class="list-legend">
-              <li class="filter-items">
-                <input type="checkbox" id="Bosch" name="Bosch" checked>
+            <ul class="list-legend checkbox">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="checkbox" id="Bosch" name="Bosch" checked>
+                <!-- <span class="checkbox"></span> -->
                 <label for="Bosch">Bosch</label>
               </li>
-              <li class="filter-items">
-                <input type="checkbox" id="Интерскол" name="Интерскол">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="checkbox" id="Интерскол" name="Интерскол">
+                <!-- <span class="checkbox"></span> -->
                 <label for="Интерскол">Интерскол</label>
               </li>
-              <li class="filter-items">
-                <input type="checkbox" id="Makita" name="Makita" checked>
+              <li class="filter-option filter-items">
+                <input class="visually-hidden check-input" type="checkbox" id="Makita" name="Makita" checked>
+                <!-- <span class="checkbox"></span> -->
                 <label for="Makita">Makita</label>
               </li>
-              <li class="filter-items">
-                <input type="checkbox" id="Dewalt" name="Dewalt">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="checkbox" id="Dewalt" name="Dewalt">
+                <!-- <span class="checkbox"></span> -->
                 <label for="Dewalt">Makita</label>
               </li>
-              <li class="filter-items">
-                <input type="checkbox" id="Hitachi" name="Hitachi">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="checkbox" id="Hitachi" name="Hitachi">
+                <!--  <span class="checkbox"></span> -->
                 <label for="Hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-item power">
             <legend>Питание:</legend>
-            <ul class="list-legend">
-              <li class="filter-items">
-                <input type="radio" id="akk" name="filter-on" value="Rechargeable" checked>
+            <ul class="list-legend radiobox">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="radio" id="akk" name="filter-on" value="Rechargeable" checked>
                 <label for="akk">Аккумуляторные</label>
               </li>
-              <li class="filter-items">
-                <input type="radio" id="net" name="filter-on" value="networking">
+              <li class="filter-option filter-items">
+                <input class="visually-hidden" type="radio" id="net" name="filter-on" value="networking">
                 <label for="net">Сетевые</label>
               </li>
             </ul>
@@ -159,7 +164,7 @@
         <section class="catalog-main-items">
           <h2 class="visually-hidden">Перечень перфораторов</h2>
           <ul class="best-block-items-catalog">
-            <li>
+            <li class="items">
               <div class="img-wrap">
                 <img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -171,7 +176,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li>
+            <li class="items">
               <div class="img-wrap">
                 <img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -183,7 +188,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li class="last">
+            <li class="items last new-buy">
               <div class="img-wrap">
                 <img src="img/snippet-6000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -195,7 +200,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li>
+            <li class="items new-buy">
               <div class="img-wrap">
                 <img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
@@ -207,7 +212,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li>
+            <li class="items">
               <div class="img-wrap">
                 <img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -219,7 +224,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li class="last">
+            <li class="items last new-buy">
               <div class="img-wrap">
                 <img src="img/snippet-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
@@ -231,7 +236,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li>
+            <li class="items new-buy">
               <div class="img-wrap">
                 <img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
@@ -243,7 +248,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li>
+            <li class="items">
               <div class="img-wrap">
                 <img src="img/snippet-6000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -255,7 +260,7 @@
                 <button class="button-items" type="button">В закладки</button>
               </div>
             </li>
-            <li class="last">
+            <li class="items last new-buy">
               <div class="img-wrap">
                 <img src="img/snippet-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
@@ -286,7 +291,7 @@
   <section class="top-footer-block">
     <div class="content">
       <div class="top-footer-flex">
-        <a aria-label="Логотип сайта Техномарт">
+        <a href="index.html" aria-label="Логотип сайта Техномарт">
           <img class="logo-footer" href="index.html" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
         <ul class="footer-main">
           <li><a class="list-footer-main" href="#">Компания</a></li>
