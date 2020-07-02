@@ -1367,7 +1367,7 @@ img {
 }
 
 .pages button:active {
-  border-color: 1px solid var(--Basic-red);
+  border: 1px solid var(--Basic-red);
 }
 
 .pages button:first-child {
