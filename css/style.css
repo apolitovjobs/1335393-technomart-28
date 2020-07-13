@@ -462,6 +462,22 @@ img {
   border: 3px solid var(--Basic-white);
   box-sizing: border-box;
   display: inline-block;
+  /* margin-left: 31px; */
+}
+
+.phone-catalog {
+  position: relative;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: transparent;
+  padding: 7px 47px 3px 73px;
+  color: var(--Basic-red);
+  border: 3px solid var(--Basic-white);
+  box-sizing: border-box;
+  display: inline-block;
   margin-left: 15px;
   margin-right: 3px;
 }
