@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Мой проект: Техномарт</title>
@@ -24,7 +24,7 @@
         </form>
         <div class="labels">
           <a class="menutop-bookmarks" href="#">Закладки: 0</a>
-          <a class="menutop-backet active-red" href="#">Корзина: 10</a>
+          <a class="menutop-basket active-red" href="#">Корзина: 10</a>
           <a class="menutop-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -33,16 +33,16 @@
       <section class="header-middle">
         <h1 class="header-description-index">Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта</h1>
         <address><a class="phone-catalog" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="adress2">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="address-catalog">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="profile-catalog">
-          <a class="menutop-user" href="#">Равшан Джамшутович</a>
-          <svg class="user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-            <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" /></svg>
-          <svg class="login_catalog" width="20" height="17" viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
-            <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" />
-          </svg>
+          <a class="menutop-user" href="#">Равшан Джамшутович
+            <svg class="user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+              <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" /></svg></a>
+          <a class="logout" href="#"><svg class="login_catalog" width="20" height="17" viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
+              <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" />
+            </svg></a>
           <div class="cabinet">
             <a class="menutop-myprofile" href="#">Мои заказы</a>
             <a class="menutop-myprofile2" href="#">Личный кабинет</a>
@@ -63,7 +63,6 @@
     </nav>
   </header>
   <main class="main-block">
-    <!-- <section class="content"> -->
     <div class="content min-nav">
       <a class="menu-list-catalog1" href="index.html" aria-label="Переход на главную страницу">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
@@ -94,41 +93,35 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  <input type="number" name="min-price" value="0">
+                  <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  <input type="number" name="max-price" value="30000">
+                  <input type="text" name="max-price" value="30000">
                 </label>
               </div>
             </div>
           </fieldset>
           <fieldset class="filter-item vendors">
-            <!-- <span class="border_fieldset"></span> -->
             <legend class="vendor">Производители:</legend>
             <ul class="list-legend checkbox">
               <li class="filter-option filter-items">
                 <input class="visually-hidden" type="checkbox" id="Bosch" name="Bosch" checked>
-                <!-- <span class="checkbox"></span> -->
                 <label for="Bosch">Bosch</label>
               </li>
               <li class="filter-option filter-items">
                 <input class="visually-hidden" type="checkbox" id="Интерскол" name="Интерскол">
-                <!-- <span class="checkbox"></span> -->
                 <label for="Интерскол">Интерскол</label>
               </li>
               <li class="filter-option filter-items">
                 <input class="visually-hidden check-input" type="checkbox" id="Makita" name="Makita" checked>
-                <!-- <span class="checkbox"></span> -->
                 <label for="Makita">Makita</label>
               </li>
               <li class="filter-option filter-items">
                 <input class="visually-hidden" type="checkbox" id="Dewalt" name="Dewalt">
-                <!-- <span class="checkbox"></span> -->
                 <label for="Dewalt">Dewalt</label>
               </li>
               <li class="filter-option filter-items">
-                <input class="visually-hidden" type="checkbox" id="Hitachi" name="Hitachi">
-                <!--  <span class="checkbox"></span> -->
+                <input class="visually-hidden" type="checkbox" id="Hitachi" name="Hitachi" disabled>
                 <label for="Hitachi">Hitachi</label>
               </li>
             </ul>
@@ -141,7 +134,7 @@
                 <label class="akk" for="akk">Аккумуляторные</label>
               </li>
               <li class="filter-option filter-items">
-                <input class="visually-hidden" type="radio" id="net" name="filter-on" value="networking">
+                <input class="visually-hidden" type="radio" id="net" name="filter-on" value="networking" disabled>
                 <label for="net">Сетевые</label>
               </li>
             </ul>
@@ -153,21 +146,19 @@
         <div class="sort-block">
           <span class="list-sort">Сортировка</span>
           <ul class="list-sort2">
-            <li class="list-sort2_active">По цене</li>
-            <li class="list-sort2_type">По типу</li>
-            <li class="list-sort2_function">По функционалу</li>
+            <li><a class="list-sort2_active" href="#">По цене</a></li>
+            <li class="list-sort2_type"><a href="#">По типу</a></li>
+            <li class="list-sort2_function"><a href="#">По функционалу</a></li>
           </ul>
           <ul class="sort-up-down">
             <li>
-              <button class="visually-hidden" type="button" aria-label="Сортировка вверх"></button>
-              <!-- <img class="icon-up" src="img/icon-up-dir_png.png" width="11" height="10" alt="Сортировка вверх"> -->
-              <svg class="icon-up icon-up_active" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.66241 0L11.1624 10L0.162415 10" /></svg>
+              <a href="#" aria-label="Сортировка вверх">
+                <svg class="icon-up icon-up_active" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" /></svg></a>
             </li>
-            <li><button class="visually-hidden" type="button" aria-label="Сортировка вниз"></button>
-              <svg class="icon-down" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.66241 10L0.162415 0H11.1624" /></svg>
-              <!-- <img class="icon-down" src="img/icon-down-dir_png.png" width="11" height="10" alt="Сортировка вниз"> -->
+            <li><a href="#" aria-label="Сортировка вниз">
+                <svg class="icon-down" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 10L0.162415 0H11.1624" /></svg></a>
             </li>
           </ul>
         </div>
@@ -205,7 +196,7 @@
               <h3 class="catalog-items">Перфоратор BOSCH<br> BFG 6000</h3>
               <p><del class="del">30500 р.</del></p>
               <p class="price">25500 р.</p>
-              <div class="hidden-items_active">
+              <div class="hidden-items">
                 <a class="button-buy" href="#">Купить</a>
                 <button class="button-items" type="button">В закладки</button>
               </div>
@@ -314,7 +305,7 @@
         </div>
         <div class="top-footer-flex2">
           <address>
-            <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55</p>
           </address>
           <ul class="footer-add">
@@ -337,26 +328,22 @@
           <li><a class="instagram" href="#" aria-label="instagram"></a></li>
         </ul>
         <div class="bottom-footer-us">
-          <p class="bottom-footer-company1">Обратная связь<br>
-            <a class="academy" href="">mail@htmlacademy.ru</a>
+          <p class="bottom-footer-company1">Обратная связь<a class="academy" href="">mail@htmlacademy.ru</a>
           </p>
-          <p class="bottom-footer-company2">Разработано<br>
-            <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <p class="bottom-footer-company2">Разработано<a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
     </section>
   </footer>
-  <section class="modal modal-backet modal-backet_flex">
-    <!-- <form action="https://echo.htmlacademy.ru" method="post"> -->
+  <section class="modal modal-basket modal-basket_flex">
     <h2 class="visually-hidden">Добавление товара в корзину</h2>
     <p>Товар добавлен в корзину!</p>
-    <div class="modal-backet__button">
+    <div class="modal-basket__button">
       <a href="">Оформить заказ</a>
       <button class="button-red" type="button">Продолжить покупки</button>
     </div>
-    <!-- </form> -->
-    <button class="backet-close" type="button" aria-label="Закрыть форму оформления товара"></button>
+    <button class="basket-close" type="button" aria-label="Закрыть форму оформления товара"></button>
   </section>
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Мой проект: Техномарт</title>
@@ -19,12 +19,12 @@
           <span class="visually-hidden">Поиск</span>
           <label class="search" for="search"></label>
           <input class="line-search" type="search" id="search" name="search" placeholder="Поиск:">
-          <svg class="serch_svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" /></svg>
         </form>
         <div class="labels">
           <a class="menutop-bookmarks" href="#">Закладки: 0</a>
-          <a class="menutop-backet" href="#">Корзина: 0</a>
+          <a class="menutop-basket" href="#">Корзина: 0</a>
           <a class="menutop-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -33,7 +33,7 @@
       <div class="header-middle">
         <h1 class="header-description-index">Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта</h1>
         <address><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="address-index">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="enter">
           <a class="login" href="#">Войти</a>
@@ -49,7 +49,7 @@
         <li><a class="list-nav-news" href="#">Новости</a></li>
         <li><a class="list-nav-suggest" href="#">Спецпредложения</a></li>
         <li><a class="list-nav-delivery" href="#">Доставка</a></li>
-        <li><a class="list-nav-kontakts" href="#">Контакты</a></li>
+        <li><a class="list-nav-contacts" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -73,19 +73,23 @@
             <li class="index-current-slider">
               <h3 class="slider-promo-items">Перфораторы</h3>
               <p class="list-promo-slider">Настоящие мужские игрушки</p>
-              <!-- <img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы"> -->
             </li>
             <li class="index-add-slider">
               <h3 class="slider-promo-items">Дрели</h3>
               <p class="list-promo-slider">Соседям на радость</p>
-              <!-- <img src="img/slider-snippet.jpg" width="620" height="266" alt="Дрели"> -->
             </li>
           </ul>
+          <a class="arrow-left" href="#" aria-label="Предыдущий слайдер">
+            <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z" fill="white" />
+            </svg>
+          </a>
+          <a class="arrow-right" href="#" aria-label="Следующий слайдер">
+            <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z" fill="white" />
+            </svg>
+          </a>
           <p class="slider-button"><a class="button-red-catalog" href="catalog.html">Открыть каталог</a></p>
-          <!-- <div class="arrow">
-            <button type="button-before" aria-label="Предыдущий слайдер"></button>
-            <button type="button-after" aria-label="Следующий слайдер"></button>
-          </div> -->
           <div class="control">
             <button class="buttonfirst" type="button" aria-label="на предыдущий слайд"></button>
             <button type="button" aria-label="на следующий слайд"></button>
@@ -171,28 +175,28 @@
       </header>
       <ul class="content best-block-items2">
         <li>
-          <a href="#" aria-label="Производитель bosh"><img src="img/vend_bosh.png" width="126" height="37" alt="Makita"></a>
+          <a href="#" aria-label="Производитель bosh"><img src="img/vend-bosh.png" width="126" height="37" alt="Makita"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend2" href="#" aria-label="Производитель makita"><img src="img/vend_makita.png" width="123" height="40" alt="Makita"></a>
+          <a class="best-block-items2_vend2" href="#" aria-label="Производитель makita"><img src="img/vend-makita.png" width="123" height="40" alt="Makita"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend3" href="#" aria-label="Производитель dewalt"><img src="img/vend_dewalt.png" width="146" height="44" alt="Dewalt"></a>
+          <a class="best-block-items2_vend3" href="#" aria-label="Производитель dewalt"><img src="img/vend-dewalt.png" width="146" height="44" alt="Dewalt"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend4" href="#" aria-label="Производитель Интерскол"><img src="img/vend_interskol.png" width="200" height="76" alt="Интерскол"></a>
+          <a class="best-block-items2_vend4" href="#" aria-label="Производитель Интерскол"><img src="img/vend-interskol.png" width="200" height="76" alt="Интерскол"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend5" href="#" aria-label="Производитель hitachi"><img src="img/vend_hitachi.png" width="169" height="31" alt="Hitachi"></a>
+          <a class="best-block-items2_vend5" href="#" aria-label="Производитель hitachi"><img src="img/vend-hitachi.png" width="169" height="31" alt="Hitachi"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend6" href="#" aria-label="Производитель LG"><img src="img/vend_LG.png" width="121" height="73" alt="Lg"></a>
+          <a class="best-block-items2_vend6" href="#" aria-label="Производитель LG"><img src="img/vend-lg.png" width="121" height="73" alt="Lg"></a>
         </li>
         <li>
-          <a class="best-block-items2_vend7" href="#" aria-label="Производитель aeg"><img src="img/vend_aeg.png" width="151" height="98" alt="Aeg"></a>
+          <a class="best-block-items2_vend7" href="#" aria-label="Производитель aeg"><img src="img/vend-aeg.png" width="151" height="98" alt="Aeg"></a>
         </li>
         <li>
-          <a class="best-block-items2_ven8" href="#" aria-label="Производитель metado"><img src="img/vend_metabo.png" width="206" height="73" alt="Metabo"></a>
+          <a class="best-block-items2_ven8" href="#" aria-label="Производитель metado"><img src="img/vend-metabo.png" width="206" height="73" alt="Metabo"></a>
         </li>
       </ul>
     </section>
@@ -229,7 +233,7 @@
               <h4 class="titles-h4">Кредит</h4>
               <p class="slider-loan-back text-about-us">Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут к вам на помщь.</p>
-              <button type="button">Отправить заявку</button>
+              <a href="#">Отправить заявку</a>
             </li>
           </ul>
         </div>
@@ -253,8 +257,8 @@
         <div class="about-us-flex">
           <h2>Контакты</h2>
           <p class="text-about-us">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <a href="#" aria-label="Карта"><img src="img/index_map1.jpg" width="300" height="158" alt="Карта"></a>
-          <a class="button-red-kontakt" href="#">Заблудились? Напишите нам!</a>
+          <a href="#" aria-label="Карта"><img src="img/index-map1.jpg" width="300" height="158" alt="Карта"></a>
+          <a class="button-red-contact" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -275,7 +279,7 @@
         </div>
         <div class="top-footer-flex2">
           <address>
-            <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55</p>
           </address>
           <ul class="footer-add">
@@ -298,17 +302,15 @@
           <li><a class="instagram" href="#" aria-label="instagram"></a></li>
         </ul>
         <div class="bottom-footer-us">
-          <p class="bottom-footer-company1">Обратная связь<br>
-            <a class="academy" href="">mail@htmlacademy.ru</a>
+          <p class="bottom-footer-company1">Обратная связь<a class="academy" href="">mail@htmlacademy.ru</a>
           </p>
-          <p class="bottom-footer-company2">Разработано<br>
-            <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <p class="bottom-footer-company2">Разработано<a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
     </section>
   </footer>
-  <section class="modal modal-kontakt">
+  <section class="modal modal-contact">
     <h2 class="visually-hidden">Связь с нами</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p class="name">
@@ -323,16 +325,25 @@
         <label for="comment">Текст письма:</label>
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
-      <div class="modal-kontakt-button">
+      <div class="modal-contact-button">
         <button class="button-modal" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="kontakt-close" type="button" aria-label="Закрыть форму связи"></button>
+    <button class="contact-close" type="button" aria-label="Закрыть форму связи"></button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как нас найти</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="map-close" type="button" aria-label="Закрыть форму с картой"></button>
+  </section>
+  <section class="modal modal-basket modal-basket_flex">
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <p>Товар добавлен в корзину!</p>
+    <div class="modal-basket__button">
+      <a href="#">Оформить заказ</a>
+      <button class="button-red" type="button">Продолжить покупки</button>
+    </div>
+    <button class="basket-close" type="button" aria-label="Закрыть форму оформления товара"></button>
   </section>
 </body>
 
